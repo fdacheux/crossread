@@ -67,6 +67,7 @@ def when_safe_fetch_redirect(context: dict[str, Any]) -> None:
     fake_client.stream.side_effect = fake_stream
     fake_client.__enter__.return_value = fake_client
     fake_client.__exit__.return_value = False
+    context["fake_client"] = fake_client
 
     with (
         patch("ingest.socket.getaddrinfo", return_value=fake_public_dns),
@@ -82,6 +83,11 @@ def when_safe_fetch_redirect(context: dict[str, Any]) -> None:
 @then("validation fails with SSRFBlockedError")
 def then_ssrf_blocked(context: dict[str, Any]) -> None:
     assert isinstance(context["error"], SSRFBlockedError), f"Expected SSRFBlockedError, got {context['error']!r}"
+
+
+@then("the unsafe redirect target is never requested")
+def then_unsafe_redirect_not_requested(context: dict[str, Any]) -> None:
+    assert context["fake_client"].stream.call_count == 1
 
 
 @given(parsers.parse('extracted text "{text}"'))

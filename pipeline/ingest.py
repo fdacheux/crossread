@@ -109,11 +109,13 @@ def _resolve_and_validate_https_url(url: str) -> tuple[str, str, str]:
 
     # Direct IP literal check
     try:
+        ipaddress.ip_address(hostname)
+    except ValueError:
+        pass
+    else:
         if _is_disallowed_ip(hostname):
             raise SSRFBlockedError(f"Blocked non-global IP literal: {hostname}")
         return cleaned, hostname, hostname
-    except ValueError:
-        pass
 
     # DNS resolution check (guards against internal hostnames, CGNAT, and metadata IPs)
     try:

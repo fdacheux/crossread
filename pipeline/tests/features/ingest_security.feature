@@ -27,6 +27,7 @@ Feature: Safe URL ingestion and pre-LLM quality filtering
     Given a public URL "https://public.example/go" that redirects to "https://169.254.169.254/latest/meta-data/"
     When safe_fetch_bytes retrieves the URL
     Then validation fails with SSRFBlockedError
+    And the unsafe redirect target is never requested
 
   Scenario: Reject bot-wall pages at the Pre-LLM Quality Gate
     Given extracted text "Just a moment... Verify you are human - Cloudflare security check"
