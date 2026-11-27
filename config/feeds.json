@@ -168,6 +168,15 @@
       "language": "fr",
       "focus": ["Threats", "Forensics"],
       "enabled": true
+    },
+    {
+      "id": "krebsonsc",
+      "name": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Threats", "Forensics"],
+      "enabled": true
     }
   ]
 }
