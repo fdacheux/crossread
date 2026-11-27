@@ -29,7 +29,6 @@ export function SourcesView() {
             Configured Bilingual Feeds
           </h1>
           <p className="text-sm text-slate-600 max-w-2xl">
-            Loaded directly from <code className="font-mono text-xs text-slate-800">config/feeds.json</code>.
             Every feed is fetched daily at 07:00 CET with HTTPS-only validation and pre-LLM quality gating.
           </p>
         </div>

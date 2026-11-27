@@ -190,8 +190,8 @@ export function BriefingDashboard({
           <div className="bg-white border border-slate-200 rounded-lg p-12 text-center space-y-3">
             <p className="text-sm font-medium text-slate-900">No briefings match these filters</p>
             <p className="text-xs text-slate-500">
-              Try broadening your category, severity, or search query, or wait for the next 07:00
-              CET pipeline run.
+              Try broadening your category, severity, or search query, or check back later for more
+              briefings.
             </p>
             <button
               type="button"
@@ -215,7 +215,6 @@ export function BriefingDashboard({
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs text-slate-500">
             <span>CrossRead — Public Read-Only Cybersecurity Briefing Desk</span>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-              <span>AI-synthesized daily at 07:00 CET</span>
               <button
                 type="button"
                 onClick={() => setLegalOpen((prev) => !prev)}
@@ -246,14 +245,13 @@ export function BriefingDashboard({
               </div>
               <div>
                 <h2 className="font-semibold text-slate-900 mb-1">
-                  Sub-Processors &amp; Data Rights
+                  Data Rights &amp; Privacy
                 </h2>
                 <p>
-                  Infrastructure relies on Vercel (web hosting), Supabase (PostgreSQL &amp; owner
-                  Auth), GitHub Actions (scheduled batch pipeline), Google Gemini API (structured
-                  synthesis), and Resend (opt-in owner digest). Raw article text is discarded in
-                  memory immediately after Fact-Sheet extraction. EU residents may exercise RGPD
-                  access/erasure rights or lodge a complaint with the CNIL.
+                  Service providers help operate CrossRead and deliver optional email alerts.
+                  Information is processed only as needed to provide briefings and alerts. EU
+                  residents may exercise RGPD access and erasure rights or lodge a complaint with
+                  the CNIL.
                 </p>
               </div>
               <div>

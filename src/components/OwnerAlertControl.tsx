@@ -284,9 +284,8 @@ export function OwnerAlertControl({
 
                 {!alertsEnabled ? (
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    Daily emails are currently turned off. The pipeline will still update the
-                    dashboard every morning at 07:00 CET and log{' '}
-                    <code className="font-mono">skipped_disabled</code> without calling Resend.
+                    Daily email alerts are turned off. Briefings will continue to appear on the
+                    dashboard. No email is sent while alerts are off.
                   </p>
                 ) : digestMatches.length === 0 ? (
                   <p className="text-xs text-slate-600 leading-relaxed">
