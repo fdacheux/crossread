@@ -105,7 +105,6 @@ def synthesize_cluster_from_fact_sheets(
         user_prompt=user_prompt,
         response_model=SynthesizedBriefing,
         temperature=0.1,
-        max_tokens=2048,
     )
 
     # Sanitize categories against DB CHECK constraint; fall back to 'Threats' if LLM
