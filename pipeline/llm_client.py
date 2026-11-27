@@ -28,6 +28,7 @@ T = TypeVar("T", bound=BaseModel)
 
 # Suppress noisy telemetry from LiteLLM in CI logs
 litellm.telemetry = False
+litellm.drop_params = True
 
 DEFAULT_TRIAGE_MODEL = "gemini/gemini-3.5-flash-lite"
 DEFAULT_SYNTHESIS_MODEL = "gemini/gemini-3.8-flash"
