@@ -57,11 +57,12 @@ git push -u origin main
 2. Name it `crossread`, generate a strong database password (save it somewhere safe), and choose an **EU region** (such as **West EU — Paris** or **Central EU — Frankfurt**) for RGPD best practices.
 3. Wait ~2 minutes for the database to finish starting.
 
-### 2B. Create the Tables (Run the 3 SQL Migrations in Order)
+### 2B. Create the Tables (Run the 4 SQL Migrations in Order)
 1. In the left sidebar of Supabase, click **SQL Editor** → **New query**.
 2. Open **`supabase/migrations/0001_phase1_schema.sql`** from your project, copy **all** of its text, paste it into the SQL Editor, and click **Run**. You should see `Success`.
 3. Repeat for **`supabase/migrations/0002_phase2_owner_alerts.sql`** → click **Run**.
 4. Repeat for **`supabase/migrations/0003_phase3_compliance_audit.sql`** → click **Run**.
+5. Repeat for **`supabase/migrations/0004_pipeline_service_role_grants.sql`** → click **Run**.
 
 ### 2C. Create Your Pre-Registered Owner Account
 For security, public visitors cannot sign up for accounts on the website. You create your single owner account directly inside Supabase:
