@@ -1,0 +1,6 @@
+{
+  "name": "Bilingual Cybersecurity Cross-Reader",
+  "description": "English & French cybersecurity intelligence aggregator that clusters stories via CVE/entity matching and synthesizes layered briefings from structured fact sheets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

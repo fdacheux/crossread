@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "settings": {
+    "rolling_cluster_window_hours": 72,
+    "min_word_count": 150,
+    "max_response_bytes": 5242880,
+    "request_timeout_seconds": 15,
+    "bot_wall_markers": [
+      "verify you are human",
+      "enable javascript",
+      "access denied",
+      "cloudflare",
+      "just a moment...",
+      "attention required!",
+      "please turn javascript on"
+    ]
+  },
+  "watchlist_keywords": [
+    "Next.js",
+    "React",
+    "Node.js",
+    "Nginx",
+    "Apache",
+    "OpenSSL",
+    "PostgreSQL",
+    "Supabase",
+    "Vercel",
+    "Docker",
+    "Kubernetes",
+    "OAuth",
+    "OIDC",
+    "JWT",
+    "XSS",
+    "SSRF",
+    "SQLi",
+    "RCE",
+    "NIS2",
+    "GDPR",
+    "RGPD",
+    "CNIL",
+    "ANSSI",
+    "DORA",
+    "CRA"
+  ],
+  "feeds": [
+    {
+      "id": "the-hacker-news",
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Web/AppSec", "CVEs", "Threats"],
+      "enabled": true
+    },
+    {
+      "id": "portswigger-research",
+      "name": "PortSwigger Research",
+      "url": "https://portswigger.net/research/rss",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Web/AppSec", "Trends/Research"],
+      "enabled": true
+    },
+    {
+      "id": "snyk-blog",
+      "name": "Snyk Security Blog",
+      "url": "https://snyk.io/blog/feed.xml",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Web/AppSec", "CVEs"],
+      "enabled": true
+    },
+    {
+      "id": "cisa-kev",
+      "name": "CISA KEV Catalog",
+      "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+      "type": "json_kev",
+      "language": "en",
+      "focus": ["CVEs", "Threats"],
+      "enabled": true
+    },
+    {
+      "id": "cisa-advisories",
+      "name": "CISA Cybersecurity Advisories",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "type": "rss",
+      "language": "en",
+      "focus": ["CVEs", "Threats", "Forensics"],
+      "enabled": true
+    },
+    {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "type": "rss",
+      "language": "en",
+      "focus": ["CVEs", "Threats", "Web/AppSec"],
+      "enabled": true
+    },
+    {
+      "id": "github-security",
+      "name": "GitHub Security Blog",
+      "url": "https://github.blog/security/feed/",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Web/AppSec", "Trends/Research"],
+      "enabled": true
+    },
+    {
+      "id": "krebs-on-security",
+      "name": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Threats", "Forensics", "Regulations"],
+      "enabled": true
+    },
+    {
+      "id": "trail-of-bits",
+      "name": "Trail of Bits Blog",
+      "url": "https://blog.trailofbits.com/feed/",
+      "type": "rss",
+      "language": "en",
+      "focus": ["Web/AppSec", "Trends/Research"],
+      "enabled": true
+    },
+    {
+      "id": "cert-fr-alertes",
+      "name": "CERT-FR Alertes",
+      "url": "https://www.cert.ssi.gouv.fr/alerte/feed/",
+      "type": "rss",
+      "language": "fr",
+      "focus": ["CVEs", "Threats"],
+      "enabled": true
+    },
+    {
+      "id": "cert-fr-avis",
+      "name": "CERT-FR Avis de sécurité",
+      "url": "https://www.cert.ssi.gouv.fr/avis/feed/",
+      "type": "rss",
+      "language": "fr",
+      "focus": ["CVEs", "Web/AppSec"],
+      "enabled": true
+    },
+    {
+      "id": "cnil-fr",
+      "name": "CNIL Actualités",
+      "url": "https://www.cnil.fr/fr/rss.xml",
+      "type": "rss",
+      "language": "fr",
+      "focus": ["Regulations"],
+      "enabled": true
+    },
+    {
+      "id": "lemondeinformatique-secu",
+      "name": "Le Monde Informatique — Sécurité",
+      "url": "https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml",
+      "type": "rss",
+      "language": "fr",
+      "focus": ["Threats", "Regulations", "Web/AppSec"],
+      "enabled": true
+    },
+    {
+      "id": "zataz",
+      "name": "ZATAZ",
+      "url": "https://www.zataz.com/feed/",
+      "type": "rss",
+      "language": "fr",
+      "focus": ["Threats", "Forensics"],
+      "enabled": true
+    }
+  ]
+}
